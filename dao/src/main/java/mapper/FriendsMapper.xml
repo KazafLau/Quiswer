@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.FriendsDao">
+
+    <insert id="makefriends" parameterType="entities.Friends">
+        INSERT INTO  friends_t (friend1,friend2)
+        VALUES (#{friend1},#{friend2})
+    </insert>
+
+    <select id="getfriends" parameterType="entities.Friends"  resultType="entities.Friends">
+        select * from friends_t where friend1=#{friend1} AND friend2=#{friend2}
+    </select>
+
+    <select id="showfriends" parameterType="int" resultType="entities.Friends">
+        SELECT * FROM friends_t WHERE friend1=#{userid} UNION ALL SELECT * FROM friends_t WHERE friend2=#{userid}
+    </select>
+
+
+</mapper>

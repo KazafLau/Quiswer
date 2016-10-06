@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.QuestionDao">
+
+    <insert id="addquestion" parameterType="entities.Question">
+        INSERT INTO question_t (question_text,question_from,question_to,question_privacy,question_time)
+        VALUES (#{question_text},#{question_from},#{question_to},#{question_privacy},#{question_time})
+    </insert>
+
+
+    <select id="findquestion" parameterType="int" resultType="entities.Question">
+        SELECT * FROM question_t WHERE question_id =#{question_id}
+    </select>
+
+    <update id="answerquestion" parameterType="entities.Question">
+        UPDATE question_t SET question_answer = #{question_answer},answer_time=#{answer_time} WHERE question_id = #{question_id}
+    </update>
+
+</mapper>

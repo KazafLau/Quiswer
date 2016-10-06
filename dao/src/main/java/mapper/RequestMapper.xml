@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dao.RequestDao">
+
+
+    <insert id="addrequest" parameterType="entities.Request">
+        INSERT INTO  request_t (request_time,request_from,request_to,request_message)
+        VALUES (#{request_time},#{request_from},#{request_to},#{request_message})
+    </insert>
+
+    <select id="findrequest" parameterType="int" resultType="entities.Request">
+        SELECT * FROM request_t WHERE request_id =#{request_id}
+    </select>
+
+    <update id="modifyrequest" parameterType="entities.Request">
+        UPDATE request_t set request_state =#{request_state},request_modifytime=#{request_modifytime} WHERE request_id =#{request_id}
+    </update>
+
+</mapper>
