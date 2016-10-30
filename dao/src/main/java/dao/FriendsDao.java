@@ -15,4 +15,6 @@ public interface FriendsDao {
     public Friends getfriends(Friends friends);
 
     public List<Friends> showfriends(int userid);
+
+    public Friends showfriendship(Friends friends);
 }

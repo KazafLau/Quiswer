@@ -1,11 +1,12 @@
 package entities;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
  * Created by kazaf on 16-10-5.
  */
-public class Question {
+public class Question implements Serializable {
 
     public int question_id;
     public String question_text;
@@ -13,9 +14,19 @@ public class Question {
     public int question_from;
     public int question_privacy;
     public Timestamp question_time;
-    public int questions_tate;
+    public int questions_state;
     public String question_answer;
     public Timestamp answer_time;
+
+    public Question() {
+    }
+
+    public Question(String question_text, int question_to, int question_from, int question_privacy) {
+        this.question_text = question_text;
+        this.question_to = question_to;
+        this.question_from = question_from;
+        this.question_privacy = question_privacy;
+    }
 
     public int getQuestion_id() {
         return question_id;
@@ -65,12 +76,12 @@ public class Question {
         this.question_time = question_time;
     }
 
-    public int getQuestions_tate() {
-        return questions_tate;
+    public int getQuestions_state() {
+        return questions_state;
     }
 
-    public void setQuestions_tate(int questions_tate) {
-        this.questions_tate = questions_tate;
+    public void setQuestions_state(int questions_state) {
+        this.questions_state = questions_state;
     }
 
     public String getQuestion_answer() {

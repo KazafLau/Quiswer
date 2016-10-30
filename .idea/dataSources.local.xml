@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - quiswer@localhost" uuid="f7576080-3636-4bb3-8b81-315904731e49">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>Quiswer.*</schema-pattern>
+      <default-schemas>Quiswer.*</default-schemas>
+    </data-source>
+  </component>
+</project>

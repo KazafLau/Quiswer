@@ -7,46 +7,51 @@ import function.FriendsFunction;
 import function.QuestionFunction;
 import function.RequestFunction;
 import function.UserFunction;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static java.lang.System.*;
 
 /**
  * Created by kazaf on 16-10-3.
  */
 public class TestUserFunciton {
 
-    public static void main(String args[]){
-       User user=new User();
-        user.setUsername("Lucy");
-        user.setPassword("201499");
-        user.setUsermail("lucy2015@icloud.com");
+    UserFunction userFunction=new UserFunction();
 
-        UserFunction userFunction=new UserFunction();
-        FriendsFunction friendsFunction=new FriendsFunction();
-        RequestFunction requestFunction=new RequestFunction();
-        QuestionFunction questionFunction=new QuestionFunction();
-
-        /*
+    @Test
+    public void testRegister(){
+        User user=new User("Kucka","1234567","kuku99@163.com");
+        System.out.println("========testRegister========");
         System.out.println(userFunction.Register(user));
+        //注册的时候 应该注意防止邮箱重复
+    }
 
-        System.out.println(requestFunction.addRequest(1,2,"hello i m kazaf wanna make friends with u!"));
+    @Test
+    public void testLogin(){
+        User user=new User("Kucka","19881129","liuli525@163.com");
+        System.out.println("========testLogin========");
+        System.out.println(userFunction.Login(user).getUserid());
+        //当存在 多个重复邮箱时 需要解决一下
+    }
 
-        user.setUsermail("liu.lucy@icloud.com");
-        user.setPassword("201511");
-        System.out.println(userFunction.Login(user));
-
-        System.out.println(requestFunction.responseRequest(8,1));
-        */
-
-        for(User user1:friendsFunction.ShowFriends(2)){
-            System.out.println(user1.getUsername()+" "+user1.getUserid()+" "+user1.getUsermail());
+    @Test
+    public void testShowAllUsers(){
+        System.out.println("========testShowAllUsers========");
+        List<User> userList=userFunction.ShowAllUsers();
+        for(User user:userList){
+        System.out.println(user.getUserid()+"    "+user.getUsername()+"    "+user.getUserpassword()+"    "+user.getUsermail());
         }
+    }
 
-        Question question=new Question();
-        String question_text="hey i just want to test this question function, and i wannn ask you a little question i want , the question is that whether you wanna be different and successful from the others?";
-        //System.out.println(questionFunction.AddQuestion(1,2,question_text,1));
-        String answer_text="Yes i am and i d like to be the best one of me even the world, id like sacrifice myself to my dream";
-        System.out.println(questionFunction.AnswerQuestion(1,answer_text));
-
-
+    @Test
+    public void testGetUserID(){
+        String useremail="liu.kazaf@icloud.com";
+        System.out.println("========testGetUserID========");
+        System.out.println(userFunction.GetUserID(useremail));
 
     }
+
 }

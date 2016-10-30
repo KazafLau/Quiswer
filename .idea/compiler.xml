@@ -33,7 +33,7 @@
       <module name="domain" target="1.5" />
       <module name="Quiswer" target="1.5" />
       <module name="service" target="1.5" />
-      <module name="web" target="1.5" />
+      <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
