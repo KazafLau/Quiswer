@@ -1,8 +1,11 @@
 package controller;
 
 import entities.Question;
+import entities.Request;
 import entities.User;
 import function.FriendsFunction;
+import function.QuestionFunction;
+import function.RequestFunction;
 import function.UserFunction;
 import jms.JMSTemplate;
 import org.apache.activemq.command.ActiveMQDestination;
@@ -31,6 +34,10 @@ public class UserController {
     private UserFunction userFunction;
     @Resource
     private FriendsFunction friendsFunction;
+    @Resource
+    private RequestFunction requestFunction;
+    @Resource
+    private QuestionFunction questionFunction;
 
     @Qualifier("user3questionList")
     private ArrayList<Question> userquestionList;
@@ -86,12 +93,19 @@ public class UserController {
             req.getSession().setAttribute("user",user);//将user信息保存在session中 这样登陆后不需要每次都查询userid
             req.getSession().setAttribute("username",user.getUsername());
 
+            List<Request> requestList=requestFunction.listRequest(user.getUserid());
+            req.getSession().setAttribute("requestlist",requestList);
+
+            List<Question> questionList=questionFunction.ShowAllQuestions(user.getUserid());
+            req.getSession().setAttribute("questionlist",questionList);
+
+            /*
             if(user.getUserid()==3){
                 session.setAttribute("userquestionList",userquestionList);
                 for(Question question:userquestionList){
                     System.out.println(" from:"+question.getQuestion_from()+" question:"+question.getQuestion_text());
                 }
-            }
+            }*/
 
             return "home";
         }

@@ -46,13 +46,13 @@ public class ProducerConsumerTest {
 
     private Destination responseDestination=(Destination) ctx.getBean("defaultResponseQueue");
 
-    @Test
+    //@Test
     public void testSessionAwareMessageListener() {
         producer.getJmsTemplate().setDeliveryMode(DeliveryMode.PERSISTENT);
         producer.sendMessage(destination, "this is the tpoic3 1!!",responseDestination);
     }
 
-    @Test
+   // @Test
     public void testSubscriber(){
         //producer.getJmsTemplate().getConnectionFactory().createConnection().setClientID();
        System.out.println( producer.receiveMessage("topic3","011767"));
@@ -64,17 +64,22 @@ public class ProducerConsumerTest {
 
     Destination questionQueue=(Destination)ctx.getBean("testquestionQueue");
 
+    Destination questionTopic=(Destination) ctx.getBean("testquestionTopic");
+
+    DefaultMessageListenerContainer questionmessageListenerContainer=(DefaultMessageListenerContainer)ctx.getBean("questionmessageListenerContainer");
+
     @Test
     public void testsendQuestion(){
         for(int i=0;i<10;i++){
             System.out.print(i+"  ");
         JMsTemplate.sendQuestion(questionQueue,question);
+            questionmessageListenerContainer.setDestination(questionQueue);
         }
     }
 
-    @Test
+    //@Test
     public void testreceiveQuestion(){
-        JMsTemplate.receiveQuestion(questionQueue);
+        JMsTemplate.receiveQuestion(questionTopic);
 
 
     }

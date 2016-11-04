@@ -23,7 +23,7 @@ public class TestUserFunciton {
 
     @Test
     public void testRegister(){
-        User user=new User("Kucka","1234567","kuku99@163.com");
+        User user=new User("Kucka","19881129","kukall@163.com");
         System.out.println("========testRegister========");
         System.out.println(userFunction.Register(user));
         //注册的时候 应该注意防止邮箱重复
@@ -31,7 +31,7 @@ public class TestUserFunciton {
 
     @Test
     public void testLogin(){
-        User user=new User("Kucka","19881129","liuli525@163.com");
+        User user=new User("Kucka","19881129","kukall@163.com");
         System.out.println("========testLogin========");
         System.out.println(userFunction.Login(user).getUserid());
         //当存在 多个重复邮箱时 需要解决一下

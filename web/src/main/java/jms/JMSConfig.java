@@ -180,6 +180,8 @@ public class JMSConfig {
 
 
 
+    @Bean//QuestionTopic
+    public ActiveMQTopic testquestionTopic(){return new ActiveMQTopic(3+"question");}
 
     @Bean//QuestionQueue
     public ActiveMQQueue testquestionQueue(){return new ActiveMQQueue(3+"question");}

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - Quiswer@kazaflau.f3322.net">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="Quiswer">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="credit"/>
+    <schema id="3" name="information_schema"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="performance_schema"/>
+    <schema id="6" name="stock"/>
+    <schema id="7" name="test"/>
+    <table id="8" parent="1" name="ACTIVEMQ_ACKS"/>
+    <table id="9" parent="1" name="ACTIVEMQ_LOCK"/>
+    <table id="10" parent="1" name="ACTIVEMQ_MSGS"/>
+    <table id="11" parent="1" name="friends_t"/>
+    <table id="12" parent="1" name="question_t"/>
+    <table id="13" parent="1" name="request_t"/>
+    <table id="14" parent="1" name="user_t"/>
+    <column id="15" parent="8" name="CONTAINER">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="SUB_DEST">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="17" parent="8" name="CLIENT_ID">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="18" parent="8" name="SUB_NAME">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="19" parent="8" name="SELECTOR">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="20" parent="8" name="LAST_ACKED_ID">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="21" parent="8" name="PRIORITY">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+      <default-expression>&apos;5&apos;</default-expression>
+    </column>
+    <column id="22" parent="8" name="XID">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <index id="23" parent="8" name="ACTIVEMQ_ACKS_XIDX">
+      <columns>XID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="24" parent="8" name="PRIMARY">
+      <columns>CONTAINER
+CLIENT_ID
+SUB_NAME
+PRIORITY</columns>
+      <primary>1</primary>
+    </key>
+    <column id="25" parent="9" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="26" parent="9" name="TIME">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="27" parent="9" name="BROKER_NAME">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="28" parent="9" name="PRIMARY">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="29" parent="10" name="ID">
+      <mandatory>1</mandatory>
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="30" parent="10" name="CONTAINER">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="31" parent="10" name="MSGID_PROD">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <column id="32" parent="10" name="MSGID_SEQ">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="33" parent="10" name="EXPIRATION">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="34" parent="10" name="MSG">
+      <data-type>longblob|0</data-type>
+    </column>
+    <column id="35" parent="10" name="PRIORITY">
+      <data-type>bigint(20)|0</data-type>
+    </column>
+    <column id="36" parent="10" name="XID">
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <index id="37" parent="10" name="ACTIVEMQ_MSGS_CIDX">
+      <columns>CONTAINER</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="38" parent="10" name="ACTIVEMQ_MSGS_EIDX">
+      <columns>EXPIRATION</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="39" parent="10" name="ACTIVEMQ_MSGS_MIDX">
+      <columns>MSGID_PROD
+MSGID_SEQ</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="40" parent="10" name="ACTIVEMQ_MSGS_PIDX">
+      <columns>PRIORITY</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="41" parent="10" name="ACTIVEMQ_MSGS_XIDX">
+      <columns>XID</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="42" parent="10" name="PRIMARY">
+      <columns>ID</columns>
+      <primary>1</primary>
+    </key>
+    <column id="43" parent="11" name="friends_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="44" parent="11" name="friend1">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="45" parent="11" name="friend2">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="46" parent="11" name="friends_time">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="47" parent="11" name="friends_active">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <index id="48" parent="11" name="FK_friends_1">
+      <columns>friend1</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="49" parent="11" name="FK_friends_2">
+      <columns>friend2</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="50" parent="11" name="PRIMARY">
+      <columns>friends_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="51" parent="11" name="FK_friends_1">
+      <columns>friend1</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="52" parent="11" name="FK_friends_2">
+      <columns>friend2</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="53" parent="11" name="before_friends">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="54" parent="12" name="question_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="55" parent="12" name="question_text">
+      <mandatory>1</mandatory>
+      <data-type>text|0</data-type>
+    </column>
+    <column id="56" parent="12" name="question_from">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="57" parent="12" name="question_to">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="58" parent="12" name="question_privacy">
+      <comment>0为公开public 1为隐私private</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="59" parent="12" name="question_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="60" parent="12" name="question_state">
+      <comment>一共两个状态 0为未回答 1为已回答</comment>
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="61" parent="12" name="question_answer">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="62" parent="12" name="answer_time">
+      <data-type>datetime|0</data-type>
+    </column>
+    <index id="63" parent="12" name="FK_question_from">
+      <columns>question_from</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="64" parent="12" name="FK_question_to">
+      <columns>question_to</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="65" parent="12" name="PRIMARY">
+      <columns>question_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="66" parent="12" name="FK_question_from">
+      <columns>question_from</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="67" parent="12" name="FK_question_to">
+      <columns>question_to</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="68" parent="12" name="inserttime_question">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="69" parent="12" name="before_question">
+      <trig-events>U</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <column id="70" parent="13" name="request_id">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="71" parent="13" name="request_time">
+      <mandatory>1</mandatory>
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="72" parent="13" name="request_from">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="73" parent="13" name="request_to">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="74" parent="13" name="request_message">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="75" parent="13" name="request_state">
+      <mandatory>1</mandatory>
+      <data-type>int(1)|0</data-type>
+      <default-expression>&apos;0&apos;</default-expression>
+    </column>
+    <column id="76" parent="13" name="request_modifytime">
+      <data-type>datetime|0</data-type>
+    </column>
+    <index id="77" parent="13" name="FK_request_from">
+      <columns>request_from</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="78" parent="13" name="FK_request_to">
+      <columns>request_to</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="79" parent="13" name="PRIMARY">
+      <columns>request_id</columns>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="80" parent="13" name="FK_request_from">
+      <columns>request_from</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="81" parent="13" name="FK_request_to">
+      <columns>request_to</columns>
+      <ref-key>~.user_t.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <trigger id="82" parent="13" name="inserttime_request">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="83" parent="13" name="before_request">
+      <trig-events>U</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+    <trigger id="84" parent="13" name="after_request">
+      <trig-events>U</trig-events>
+      <trig-turn>AFTER_ROW</trig-turn>
+    </trigger>
+    <column id="85" parent="14" name="userid">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="86" parent="14" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="87" parent="14" name="userpassword">
+      <mandatory>1</mandatory>
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="88" parent="14" name="useremail">
+      <mandatory>1</mandatory>
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="89" parent="14" name="user_time">
+      <data-type>datetime|0</data-type>
+    </column>
+    <column id="90" parent="14" name="user_active">
+      <data-type>tinyint(1)|0</data-type>
+      <default-expression>&apos;1&apos;</default-expression>
+    </column>
+    <key id="91" parent="14" name="PRIMARY">
+      <columns>userid</columns>
+      <primary>1</primary>
+    </key>
+    <trigger id="92" parent="14" name="before_user">
+      <trig-events>I</trig-events>
+      <trig-turn>BEFORE_ROW</trig-turn>
+    </trigger>
+  </database-model>
+</dataSource>

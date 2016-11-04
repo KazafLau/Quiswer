@@ -68,7 +68,6 @@ public class FriendController {
         ActiveMQQueue nomainate=new ActiveMQQueue(friendID+"question");//TODO 这里应该有个ActiveMQQueue的池,从里面取出来相应ID的QUeue
         jmsTemplate.sendQuestion(nomainate,question);
 
-
         return "asksuccess";
     }
 
