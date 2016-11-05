@@ -7,7 +7,9 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.sql.Timestamp;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by kazaf on 16-10-5.
@@ -46,6 +48,15 @@ public class RequestFunction {
     public List<Request> listRequest(int userid){
         //显示的是state=0的userid为request_to的所有request
         return conf.getRequestDao().showrequests(userid);
+    }
+
+
+    public Map<Request,String> MapRequestwithName(int userid){
+        Map<Request,String> requestmap=new HashMap<Request, String>();
+        for (Request request:listRequest(userid)){
+            requestmap.put(request,conf.getUserDao().getUserfromID(request.getRequest_from()).getUsername());
+        }
+        return requestmap;
     }
 
     public Request findRequest(int request_id){

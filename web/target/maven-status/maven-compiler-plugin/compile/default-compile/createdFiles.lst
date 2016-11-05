@@ -21,6 +21,7 @@ configuration/SpringWebApplicationInitializer.class
 jms/topic/TopicSender.class
 jms/spring/ConsumerMessageListener.class
 jms/spring/ConsumerListener.class
+controller/QuestionController.class
 jms/topic/TopicPublisher.class
 jms/queue/JMSConsumer.class
 jms/queue/JMSProducer.class

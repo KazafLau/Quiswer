@@ -84,5 +84,16 @@ public class UserFunction {
         }
     }
 
+    public User GetActiveUser(int userid){
+        User tempuser=conf.getUserDao().getActiveUser(userid);
+        if(tempuser==null){
+            System.out.println("userid has not registered");
+            return null;}
+        else
+        {
+            System.out.println("Get user successfully");
+            return tempuser;
+        }
+    }
 
 }

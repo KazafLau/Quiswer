@@ -12,7 +12,9 @@ import javax.jms.DeliveryMode;
 import javax.jms.Destination;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by kazaf on 16-10-6.
@@ -49,5 +51,14 @@ public class QuestionFunction {
     public List<Question> ShowAllQuestions(int userid){
 
         return (ArrayList)conf.getQuestionDao().showallquestions(userid);
+    }
+
+
+    public Map<Question,String> ShowALLQuestionswithName(int userid){
+        Map<Question,String> questionMap=new HashMap<Question, String>();
+        for(Question question:ShowAllQuestions(userid)){
+            questionMap.put(question,conf.getUserDao().getUserfromID(question.getQuestion_from()).getUsername());//这里获取的都是活跃客户的问题，如果遇到已经注销客户的问题则查询不到userid
+        }
+        return questionMap;
     }
 }

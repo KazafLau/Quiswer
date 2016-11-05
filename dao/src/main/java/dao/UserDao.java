@@ -22,4 +22,6 @@ public interface UserDao {
     public User getActiveUser(int userid);
 
 
+    public User getUserfromID(int userid);
+
 }

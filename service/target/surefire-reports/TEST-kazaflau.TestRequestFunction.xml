@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="kazaflau.TestRequestFunction" time="0.288" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="kazaflau.TestRequestFunction" time="0.133" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -12,7 +12,7 @@
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="idea.launcher.port" value="7532"/>
+    <property name="idea.launcher.port" value="7537"/>
     <property name="user.country" value="CN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
@@ -63,8 +63,9 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="kazaflau.TestRequestFunction" name="testresponseRequest" time="0.263"/>
-  <testcase classname="kazaflau.TestRequestFunction" name="testlistRequest" time="0.003"/>
+  <testcase classname="kazaflau.TestRequestFunction" name="testresponseRequest" time="0.095"/>
+  <testcase classname="kazaflau.TestRequestFunction" name="testlMapRequestwithName" time="0.018"/>
+  <testcase classname="kazaflau.TestRequestFunction" name="testlistRequest" time="0.009"/>
   <testcase classname="kazaflau.TestRequestFunction" name="testfindRequest" time="0.004"/>
-  <testcase classname="kazaflau.TestRequestFunction" name="testaddRequest" time="0.018"/>
+  <testcase classname="kazaflau.TestRequestFunction" name="testaddRequest" time="0.007"/>
 </testsuite>

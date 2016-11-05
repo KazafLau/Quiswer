@@ -25,11 +25,9 @@ public class FriendController {
 
     @Resource
     private RequestFunction requestFunction;
-    @Resource
-    private QuestionFunction questionFunction;
 
-    @Autowired
-    private JMSTemplate jmsTemplate;
+
+
 
     @Autowired
     private HttpSession session;
@@ -50,26 +48,6 @@ public class FriendController {
         return message;
     }
 
-    @RequestMapping(value = "/Nomainate")
-    public String NomanaitedFriend(HttpServletRequest req, HttpServletResponse resp){
-        //TODO 点名好友发送问题,该点名为p2p的Queue队列,从页面获取1点名者的ID(friendID),2问题内容(question),问卷内容通过("question"),
-        User tempuser=(User)req.getSession().getAttribute("user");
-        int privacy=0;
-        if(req.getParameter("privacy").equals("public")){privacy=1;}
-        int friendID=Integer.parseInt(req.getParameter("friendID"));
-        //Question question=new Question(req.getParameter("question"),friendID,tempuser.getUserid(),privacy,new Timestamp(System.currentTimeMillis()));
-        Question question=new Question();
-        question.setQuestion_text(req.getParameter("question"));
-        question.setQuestion_from(tempuser.getUserid());
-        question.setQuestion_to(friendID);
-        question.setQuestion_privacy(privacy);
-        questionFunction.AddQuestion(question);
-
-        ActiveMQQueue nomainate=new ActiveMQQueue(friendID+"question");//TODO 这里应该有个ActiveMQQueue的池,从里面取出来相应ID的QUeue
-        jmsTemplate.sendQuestion(nomainate,question);
-
-        return "asksuccess";
-    }
 
     public String AnswerRequest(HttpServletRequest req,HttpServletResponse resp){
         String message=null;

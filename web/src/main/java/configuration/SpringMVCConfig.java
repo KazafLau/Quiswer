@@ -22,7 +22,8 @@ public class SpringMVCConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
        registry.addViewController("/").setViewName("index");
         registry.addViewController("/register").setViewName("register");
-        registry.addViewController("/question").setViewName("question");}
+        registry.addViewController("/question").setViewName("question");
+        registry.addViewController("/answer").setViewName("answer");}
 
     @Bean
     public ViewResolver viewResolver() {

@@ -2,7 +2,12 @@ package kazaflau;
 
 import entities.Question;
 import function.QuestionFunction;
+import function.UserFunction;
 import org.junit.Test;
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Kazaf on 16/10/26.
@@ -10,6 +15,7 @@ import org.junit.Test;
 public class TestQuestionFunction {
 
     QuestionFunction questionFunction=new QuestionFunction();
+    UserFunction userFunction=new UserFunction();
 
 
     @Test
@@ -39,4 +45,16 @@ public class TestQuestionFunction {
             System.out.println(question.getQuestion_id()+"  "+question.getQuestion_from()+"  "+question.getQuestion_to()+"  "+question.getQuestion_text());
         }
     }
+
+    @Test
+    public void testShowALlQuestionswithName(){
+        System.out.println();
+        System.out.println();
+        System.out.println("=============testShowALlQuestionswithName==================");
+        Map<Question,String> questionMap=questionFunction.ShowALLQuestionswithName(30);
+        for(Question question:questionMap.keySet()) {
+            System.out.println("Question :" +question.getQuestion_text()+ " from " + questionMap.get(question));
+        }
+    }
+
 }

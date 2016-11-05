@@ -4,6 +4,8 @@ import entities.Request;
 import function.RequestFunction;
 import org.junit.Test;
 
+import java.util.Map;
+
 /**
  * Created by Kazaf on 16/10/26.
  */
@@ -38,8 +40,19 @@ public class TestRequestFunction {
         System.out.println();
         System.out.println();
         System.out.println("=============testlistRequest==================");
-        for(Request request:requestFunction.listRequest(2)){
+        for(Request request:requestFunction.listRequest(3)){
             System.out.println(request.getRequest_id()+"    "+request.getRequest_from()+"    "+request.getRequest_message()+"     "+request.getRequest_state()+"    "+request.getRequest_time());
+        }
+    }
+
+    @Test
+    public void testlMapRequestwithName(){
+        System.out.println();
+        System.out.println();
+        System.out.println("=============testlMapRequestwithName==================");
+        Map<Request,String> requestmap=requestFunction.MapRequestwithName(30);
+        for(Request request:requestmap.keySet()){
+            System.out.println(requestmap.get(request)+" makes a reques for friend with: "+request.getRequest_message()+" at "+request.getRequest_time());
         }
     }
 
