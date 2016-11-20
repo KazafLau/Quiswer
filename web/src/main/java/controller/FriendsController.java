@@ -29,17 +29,26 @@ public class FriendsController {
         List<User> friendwithname=(List<User>)userFunction.ShowUsersWithName(friendname);
         Map<User,String> friendmap=new HashMap<>();
 
-        for(User user1:friendwithname){
-            for(User user2:friendlist){
-                if(user1.getUserid()==user2.getUserid()){
-                    friendmap.put(user1,"already friend");
-                    friendwithname.remove(user1);
+        User userwithname;
+        User userfriend;
+
+        Iterator<User> itwithname=friendwithname.iterator();
+        while(itwithname.hasNext()){
+            userwithname=itwithname.next();
+           Iterator<User> itfriend=friendlist.iterator();
+            while(itfriend.hasNext())
+            {
+                userfriend=itfriend.next();
+                if(userwithname.getUserid()==userfriend.getUserid()){
+                    friendmap.put(userwithname,"already friend");
+                    itwithname.remove();
                     break;
                 }
             }
         }
-        for(User user3:friendwithname){
-            friendmap.put(user3,"not friend");
+
+        for(User user:friendwithname){
+            friendmap.put(user,"not friend");
         }
 
         pritnMap(friendmap);

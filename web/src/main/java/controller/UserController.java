@@ -46,8 +46,8 @@ public class UserController {
     @Qualifier("user3questionList")
     private ArrayList<Question> userquestionList;
 
-    @Autowired
-    HttpSession session;
+    //@Autowired
+    //HttpSession session;
 
     //@Autowired
    // private JMSTemplate jmsTemplate;
@@ -81,9 +81,6 @@ public class UserController {
             session.setAttribute("friendslist",friendsFunction.ShowFriends(user.getUserid()));
             modelandview.addObject("username",user.getUsername());
             modelandview.addObject("userid",user.getUserid());
-           // modelandview.addObject("requestmap",requestFunction.MapRequestwithName(user.getUserid()));
-            //modelandview.addObject("questionmap",questionFunction.ShowALLQuestionswithName(user.getUserid()));
-           // modelandview.addObject("friendslist",friendsFunction.ShowFriends(user.getUserid()));
             modelandview.setViewName("home");
             return modelandview;
         }
@@ -96,6 +93,11 @@ public class UserController {
 
     public String UserUpdate(){
         //TODO
+        return "";
+    }
+
+
+    public String UserLogout(){
         return "";
     }
 

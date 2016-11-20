@@ -38,8 +38,8 @@ public class RequestController {
 
 
 
-    @Autowired
-    private HttpSession session;
+    //@Autowired
+    //private HttpSession session;
 
 
     @RequestMapping(value = "/addfriend")

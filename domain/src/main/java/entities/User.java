@@ -7,6 +7,8 @@ import java.sql.Timestamp;
  */
 public class User {
 
+    //TODO 注意email的方法
+
     public int userid;
     public String username;
     public String userpassword;
@@ -39,6 +41,11 @@ public class User {
     }
 
     public User() {
+    }
+
+    public User(String useremail,String userpassword){
+        this.useremail=useremail;
+        this.userpassword=userpassword;
     }
 
     public User(String username, String userpassword, String useremail) {

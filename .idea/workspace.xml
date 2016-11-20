@@ -4,137 +4,87 @@
     <bookmark url="file://$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" line="17" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c079b7d1-73cd-43a5-be9a-6c2e59f28a07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dao/src/test/java/kazaflau/testDataConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/configuration/DataConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/configuration/ShiroConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/shiro/MyRealm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/xmlconfig/mybatisdao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/xmlconfig/spring-druid.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/xmlconfig/springmvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/java/xmlconfig/springroot.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/acceptfriend.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/denyfriend.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendrequestsentok.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendsearch.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/request/RequesstDeny.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/request/RequestAccept.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/requestsuccess.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/BaseTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/UserControllerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/testDruid.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/testShiro.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.TestFriendsFunction.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.TestQuestionFunction.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.TestRequestFunction.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.TestUserFunciton.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.TestFriendsFunction.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.TestQuestionFunction.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.TestRequestFunction.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.TestUserFunciton.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/classes/controller/FriendController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/answer_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/answer_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/answersuccess_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/answersuccess_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/home_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/home_jsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/question_jsp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/question_jsp.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/java/controller/FriendController.java" afterPath="$PROJECT_DIR$/web/src/main/java/controller/RequestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/Quiswer-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dao/target/Quiswer-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/conf/Conf.class" afterPath="$PROJECT_DIR$/dao/target/classes/conf/Conf.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/dao/FriendsDao.class" afterPath="$PROJECT_DIR$/dao/target/classes/dao/FriendsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/dao/QuestionDao.class" afterPath="$PROJECT_DIR$/dao/target/classes/dao/QuestionDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/dao/RequestDao.class" afterPath="$PROJECT_DIR$/dao/target/classes/dao/RequestDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/dao/UserDao.class" afterPath="$PROJECT_DIR$/dao/target/classes/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/Quiswer-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/domain/target/Quiswer-domain-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/Quiswer-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/service/target/Quiswer-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/function/FriendsFunction.class" afterPath="$PROJECT_DIR$/service/target/classes/function/FriendsFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/function/QuestionFunction.class" afterPath="$PROJECT_DIR$/service/target/classes/function/QuestionFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/function/RequestFunction.class" afterPath="$PROJECT_DIR$/service/target/classes/function/RequestFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/function/UserFunction.class" afterPath="$PROJECT_DIR$/service/target/classes/function/UserFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestFriendsFunction.class" afterPath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestFriendsFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestQuestionFunction.class" afterPath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestQuestionFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestRequestFunction.class" afterPath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestRequestFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestUserFunciton.class" afterPath="$PROJECT_DIR$/service/target/test-classes/kazaflau/TestUserFunciton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-dao-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-domain-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-domain-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-web-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-web-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/configuration/AppConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/configuration/AppConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/configuration/SpringMVCConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/configuration/SpringMVCConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/configuration/SpringWebApplicationInitializer.class" afterPath="$PROJECT_DIR$/web/target/classes/configuration/SpringWebApplicationInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/controller/QuestionController.class" afterPath="$PROJECT_DIR$/web/target/classes/controller/QuestionController.class" />
+    <list default="true" id="c079b7d1-73cd-43a5-be9a-6c2e59f28a07" name="Default" comment="增加了Controller测试包">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/ControllerTest/ControllerBaseTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/test/ControllerTest/FriendsControllerTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/test/ControllerBaseTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/AppConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringMVCConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringWebApplicationInitializer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/FriendController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/UserController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/JMSConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/JMSTemplate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/queue/JMSConsumer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/queue/JMSProducer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/ConsumerListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/ConsumerMessageListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/ConsumerSessionAwareMessageListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/DefaultResponseQueueListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/Producer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/QuestionConvertor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/QuestionListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/RequestConvertor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/ResponseQueueListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/spring/TopicLIstener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/topic/TopicPublisher.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/topic/TopicReceiver.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/topic/TopicSender.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/topic/TopicSubscriber.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-dao-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-domain-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-service-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/Quiswer-web-1.0-SNAPSHOT.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/activemq-core-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/activemq-pool-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/activemq-protobuf-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/commons-net-3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/commons-pool-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/geronimo-j2ee-management_1.1_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jms_1.1_spec-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.0.1B_spec-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/hawtbuf-1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/hawtdispatch-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/hawtdispatch-transport-1.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/jasypt-1.9.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/javax.jms-api-2.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/kahadb-5.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/mqtt-client-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.34.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-jms-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-messaging-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/answer.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/asksuccess.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/question.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/test/BaseTest.java" afterPath="$PROJECT_DIR$/web/src/test/ControllerTest/BaseTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/test/UserControllerTest.java" afterPath="$PROJECT_DIR$/web/src/test/ControllerTest/UserControllerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/classes/entities/User.class" afterPath="$PROJECT_DIR$/domain/target/classes/entities/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/controller/UserController.class" afterPath="$PROJECT_DIR$/web/target/classes/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/jms/JMSConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/jms/JMSConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/dao.iml" afterPath="$PROJECT_DIR$/dao/dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/pom.xml" afterPath="$PROJECT_DIR$/dao/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/conf/Conf.java" afterPath="$PROJECT_DIR$/dao/src/main/java/conf/Conf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/dao/FriendsDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/dao/FriendsDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/dao/QuestionDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/dao/QuestionDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/dao/RequestDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/dao/RequestDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/dao/UserDao.java" afterPath="$PROJECT_DIR$/dao/src/main/java/dao/UserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/mapper/QuestionMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/mapper/QuestionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/mapper/QuestionMapper.xml" afterPath="$PROJECT_DIR$/dao/target/classes/mapper/QuestionMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/classes/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/dao/target/classes/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/surefire-reports/TEST-kazaflau.AppTest.xml" afterPath="$PROJECT_DIR$/dao/target/surefire-reports/TEST-kazaflau.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dao/target/surefire-reports/kazaflau.AppTest.txt" afterPath="$PROJECT_DIR$/dao/target/surefire-reports/kazaflau.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/domain/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/surefire-reports/TEST-kazaflau.AppTest.xml" afterPath="$PROJECT_DIR$/domain/target/surefire-reports/TEST-kazaflau.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/target/surefire-reports/kazaflau.AppTest.txt" afterPath="$PROJECT_DIR$/domain/target/surefire-reports/kazaflau.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/function/FriendsFunction.java" afterPath="$PROJECT_DIR$/service/src/main/java/function/FriendsFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/function/QuestionFunction.java" afterPath="$PROJECT_DIR$/service/src/main/java/function/QuestionFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/function/RequestFunction.java" afterPath="$PROJECT_DIR$/service/src/main/java/function/RequestFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/function/UserFunction.java" afterPath="$PROJECT_DIR$/service/src/main/java/function/UserFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestFriendsFunction.java" afterPath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestFriendsFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestQuestionFunction.java" afterPath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestQuestionFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestRequestFunction.java" afterPath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestRequestFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestUserFunciton.java" afterPath="$PROJECT_DIR$/service/src/test/java/kazaflau/TestUserFunciton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.AppTest.xml" afterPath="$PROJECT_DIR$/service/target/surefire-reports/TEST-kazaflau.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.AppTest.txt" afterPath="$PROJECT_DIR$/service/target/surefire-reports/kazaflau.AppTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pom.xml" afterPath="$PROJECT_DIR$/web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/configuration/AppConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/configuration/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/configuration/SpringMVCConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/configuration/SpringMVCConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/configuration/SpringWebApplicationInitializer.java" afterPath="$PROJECT_DIR$/web/src/main/java/configuration/SpringWebApplicationInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/controller/QuestionController.java" afterPath="$PROJECT_DIR$/web/src/main/java/controller/QuestionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/domain/src/main/java/entities/User.java" afterPath="$PROJECT_DIR$/domain/src/main/java/entities/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" afterPath="$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/controller/RequestController.java" afterPath="$PROJECT_DIR$/web/src/main/java/controller/RequestController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/controller/UserController.java" afterPath="$PROJECT_DIR$/web/src/main/java/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/jms/JMSConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/jms/JMSConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/test/ProducerConsumerTest.java" afterPath="$PROJECT_DIR$/web/src/test/ProducerConsumerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/AppConfig.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/AppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringMVCConfig.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringMVCConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringWebApplicationInitializer.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/configuration/SpringWebApplicationInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/FriendController.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/FriendController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/UserController.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/JMSConfig.java" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/classes/jms/JMSConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/answer.jsp" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/answer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/home.jsp" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/question.jsp" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/views/question.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/target/Quiswer-web-1.0-SNAPSHOT/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
     </list>
     <ignored path="Quiswer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -185,63 +135,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FriendsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quiswer.user_t" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/7cfae5b5/6bb137a7-ea3d-4ce4-9480-f1e5ea705cef/Quiswer.user_t">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/RequestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ControllerBaseTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/test/ControllerBaseTest.java">
+        <entry file="file://$PROJECT_DIR$/web/src/test/ControllerTest/ControllerBaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="201">
+              <caret line="49" column="60" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="60" />
+              <folding>
+                <element signature="method#Login#0;class#ControllerBaseTest#0" expanded="false" />
+                <element signature="method#SessionAttributes#0;class#ControllerBaseTest#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1800">
+              <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3218#3219#0" expanded="true" />
+                <element signature="e#3243#3244#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -250,42 +172,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/test/UserControllerTest.java">
+      <file leaf-file-name="testShiro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/test/testShiro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyRealm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/shiro/MyRealm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="denyfriend.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/denyfriend.jsp">
+      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="16" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friendsearch.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendsearch.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friendrequestsentok.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendrequestsentok.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="414">
+              <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+              <folding>
+                <marker date="1479310659115" expanded="true" signature="265:308" ph="select * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="415:487" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="570:681" ph="INSERT INTO user_t" />
+                <marker date="1479310659115" expanded="true" signature="763:783" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="893:919" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="893:928" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="893:945" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="893:963" ph="SELECT * fro... user_t" />
+                <marker date="1479310659115" expanded="true" signature="1065:1126" ph="SELECT * FRO... user_t" />
+                <marker date="1479310659115" expanded="true" signature="1229:1272" ph="SELECT * FRO... user_t" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -302,6 +225,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Kazaf &lt;liu.kazaf@icloud.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -312,9 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dao/src/main/java/conf/DataConfig.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/dao/FriendsDao.java" />
-        <option value="$PROJECT_DIR$/dao/src/main/java/dao/QuestionDao.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/dao/RequestDao.java" />
         <option value="$PROJECT_DIR$/dao/src/test/java/kazaflau/testDataConfig.java" />
         <option value="$PROJECT_DIR$/dao/pom.xml" />
@@ -344,16 +269,13 @@
         <option value="$PROJECT_DIR$/dao/src/main/java/mapper/QuestionMapper.xml" />
         <option value="$PROJECT_DIR$/service/src/main/java/function/RequestFunction.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/request/RequesstDeny.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/java/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/request/RequestAccept.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/java/controller/FriendController.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/function/UserFunction.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/controller/RequestController.java" />
         <option value="$PROJECT_DIR$/web/src/test/BaseTest.java" />
         <option value="$PROJECT_DIR$/service/src/test/java/kazaflau/TestUserFunciton.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" />
         <option value="$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/answer.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendsearch.jsp" />
@@ -361,8 +283,14 @@
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/acceptfriend.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/denyfriend.jsp" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendrequestsentok.jsp" />
-        <option value="$PROJECT_DIR$/web/src/test/ControllerBaseTest.java" />
         <option value="$PROJECT_DIR$/web/src/test/UserControllerTest.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/controller/RequestController.java" />
+        <option value="$PROJECT_DIR$/web/src/test/FriendsControllerTest.java" />
+        <option value="$PROJECT_DIR$/domain/src/main/java/entities/User.java" />
+        <option value="$PROJECT_DIR$/web/src/test/ControllerBaseTest.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java" />
+        <option value="$PROJECT_DIR$/web/src/test/ControllerTest/ControllerBaseTest.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -418,8 +346,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -548,166 +474,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kazaflau" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Quiswer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
+              <option name="myItemId" value="shiro" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -725,8 +499,18 @@
     <property name="SearchEverywhereHistoryKey" value="hom&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/webapp/WEB-INF/views/home.jsp&#10;home&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/webapp/WEB-INF/views/home.jsp&#10;index.js&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/webapp/WEB-INF/views/index.jsp&#10;inde&#9;null&#9;null&#10;usercont&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/java/controller/UserController.java&#10;question&#9;PSI&#9;JAVA://entities.Question&#10;question.js&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/webapp/WEB-INF/views/question.jsp&#10;friendc&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/java/controller/FriendController.java&#10;requesF&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/service/src/main/java/function/RequestFunction.java&#10;questionf&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/service/src/main/java/function/QuestionFunction.java&#10;UserDa&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/dao/src/main/java/dao/UserDao.java&#10;UserM&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/dao/src/main/java/mapper/UserMapper.xml&#10;testQ&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/service/src/test/java/kazaflau/TestQuestionFunction.java&#10;test&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/service/src/test/java/kazaflau/TestRequestFunction.java&#10;userco&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/java/controller/UserController.java&#10;userc&#9;FILE&#9;file:///home/kazaf/workspace/Quiswer/web/src/main/java/controller/UserController.java" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dao/src/main/java" />
+      <recent name="$PROJECT_DIR$/dao/src/main/java/conf" />
+      <recent name="$PROJECT_DIR$/service/src/main/java" />
+      <recent name="$PROJECT_DIR$/dao/src/main" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ControllerTest" />
       <recent name="conf" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kazaflau" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views" />
@@ -735,43 +519,8 @@
       <recent name="$PROJECT_DIR$/dao/src/main/java/mapper" />
       <recent name="$PROJECT_DIR$/dao/target/classes" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="kazaflau" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dao/src/main/java" />
-      <recent name="$PROJECT_DIR$/dao/src/main/java/conf" />
-      <recent name="$PROJECT_DIR$/service/src/main/java" />
-      <recent name="$PROJECT_DIR$/dao/src/main" />
-    </key>
   </component>
   <component name="RunManager" selected="JUnit.UserControllerTest.Login">
-    <configuration default="false" name="TestUserFunciton.testDAOGetUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="kazaflau.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kazaflau" />
-      <option name="MAIN_CLASS_NAME" value="kazaflau.TestUserFunciton" />
-      <option name="METHOD_NAME" value="testDAOGetUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="testDruid.testGetUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="web" />
@@ -845,9 +594,30 @@
       <module name="web" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTest" />
+      <option name="PACKAGE_NAME" value="ControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest.UserControllerTest" />
       <option name="METHOD_NAME" value="Login" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FriendsControllerTest.FriendSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="web" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ControllerTest" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest.FriendsControllerTest" />
+      <option name="METHOD_NAME" value="FriendSearch" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1315,19 +1085,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testDAOGetUser" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.testDruid.testGetUser" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testRegister" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.testShiro.testLogin" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserControllerTest.Login" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.testDruid.testGetUser" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testRegister" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.testShiro.testLogin" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserControllerTest.Login" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FriendsControllerTest.FriendSearch" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.UserControllerTest.Login" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.testShiro.testLogin" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.testDruid.testGetUser" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testRegister" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testDAOGetUser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FriendsControllerTest.FriendSearch" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.testShiro.testLogin" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.testDruid.testGetUser" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestUserFunciton.testRegister" />
       </list>
     </recent_temporary>
   </component>
@@ -1383,43 +1153,45 @@
       <workItem from="1478785008798" duration="6123000" />
       <workItem from="1479288111813" duration="18093000" />
       <workItem from="1479604330800" duration="34000" />
+      <workItem from="1479606702465" duration="6841000" />
+      <workItem from="1479613870801" duration="917000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserControllerTest_Login - 2016.11.17 at 17h 57m 21s.xml">
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 00m 39s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 03m 29s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 05m 48s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 14m 58s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 20m 57s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 21m 13s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FriendsControllerTest_FriendSearch - 2016.11.20 at 11h 24m 13s.xml">
+      <configuration name="FriendsControllerTest.FriendSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserControllerTest_Login - 2016.11.20 at 11h 26m 45s.xml">
       <configuration name="UserControllerTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testDruid_testGetUser - 2016.11.06 at 13h 10m 31s.xml">
-      <configuration name="testDruid.testGetUser" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_Login - 2016.11.20 at 11h 27m 28s.xml">
+      <configuration name="UserControllerTest.Login" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 21h 45m 40s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 21h 48m 11s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 21h 49m 19s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 21h 52m 42s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 22h 39m 27s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 22h 42m 27s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 22h 55m 11s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="testShiro_testLogin - 2016.11.10 at 23h 07m 43s.xml">
-      <configuration name="testShiro.testLogin" configurationId="JUnit" />
+    <history-entry file="UserControllerTest_Login - 2016.11.20 at 11h 28m 31s.xml">
+      <configuration name="UserControllerTest.Login" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249723000" />
+    <option name="totallyTimeSpent" value="257481000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1432,35 +1204,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29417878" sideWeight="0.49145064" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32744282" sideWeight="0.50981873" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23552124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5821813" sideWeight="0.49018127" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21933472" sideWeight="0.49018127" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32016632" sideWeight="0.48626816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22338665" sideWeight="0.4951049" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27027026" sideWeight="0.4951049" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16271374" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498621" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22338665" sideWeight="0.5048951" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29417878" sideWeight="0.49145064" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3118503" sideWeight="0.48626816" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1493,6 +1265,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加了Controller测试包" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了Controller测试包" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -1503,7 +1279,7 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1512,71 +1288,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar!/org/springframework/web/context/AbstractContextLoaderInitializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar!/org/springframework/web/servlet/support/AbstractAnnotationConfigDispatcherServletInitializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="39" column="57" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar!/org/springframework/web/servlet/support/AbstractDispatcherServletInitializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.2.4/shiro-web-1.2.4.jar!/org/apache/shiro/web/mgt/DefaultWebSecurityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2097">
-          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/configuration/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/testShiro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/configuration/SpringMVCConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="26" column="88" selection-start-line="26" selection-start-column="88" selection-end-line="26" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/shiro/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/xmlconfig/springroot.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1598,7 +1313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1640,14 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="82" selection-start-line="20" selection-start-column="82" selection-end-line="20" selection-end-column="82" />
-          <folding>
-            <marker date="1479300390488" expanded="true" signature="259:426" ph="INSERT INTO question_t... " />
-            <marker date="1479300390488" expanded="true" signature="533:591" ph="SELECT * FRO... question_t" />
-            <marker date="1479300390488" expanded="true" signature="682:774" ph="UPDATE quest... " />
-            <marker date="1479300390488" expanded="true" signature="884:950" ph="SELECT * FRO... question_t" />
-            <marker date="1479300390488" expanded="true" signature="884:956" ph="SELECT * FRO... question_t" />
-            <marker date="1479300390488" expanded="true" signature="884:958" ph="SELECT * FRO... question_t" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1674,14 +1380,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/7cfae5b5/6bb137a7-ea3d-4ce4-9480-f1e5ea705cef/Quiswer.question_t">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1727,24 +1433,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpSession.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1755,62 +1447,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/function/UserFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="105" column="39" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/QuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="106" column="54" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/7cfae5b5/6bb137a7-ea3d-4ce4-9480-f1e5ea705cef/Quiswer.request_t">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
-          <folding>
-            <marker date="1479310659115" expanded="true" signature="265:308" ph="select * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="415:487" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="570:681" ph="INSERT INTO user_t" />
-            <marker date="1479310659115" expanded="true" signature="763:783" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="893:919" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="893:928" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="893:945" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="893:963" ph="SELECT * fro... user_t" />
-            <marker date="1479310659115" expanded="true" signature="1065:1126" ph="SELECT * FRO... user_t" />
-            <marker date="1479310659115" expanded="true" signature="1229:1272" ph="SELECT * FRO... user_t" />
-          </folding>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1848,48 +1493,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/7cfae5b5/6bb137a7-ea3d-4ce4-9480-f1e5ea705cef/Quiswer.user_t">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/RequestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/ControllerBaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1901,34 +1513,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/UserControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendrequestsentok.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/denyfriend.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="16" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendsearch.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="570">
           <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/friendrequestsentok.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="211">
+          <caret line="90" column="31" selection-start-line="90" selection-start-column="31" selection-end-line="90" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/ControllerTest/FriendsControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#FriendSearch#0;class#FriendsControllerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/FriendsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+          <folding>
+            <element signature="method#FriendSearch#0;class#FriendsController#0" expanded="false" />
+            <element signature="method#pritnMap#0;class#FriendsController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/src/main/java/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/ControllerTest/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/RequestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/ControllerTest/UserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="137" selection-start-line="31" selection-start-column="137" selection-end-line="31" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/src/main/java/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+          <folding>
+            <marker date="1479310659115" expanded="true" signature="265:308" ph="select * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="415:487" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="570:681" ph="INSERT INTO user_t" />
+            <marker date="1479310659115" expanded="true" signature="763:783" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="893:919" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="893:928" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="893:945" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="893:963" ph="SELECT * fro... user_t" />
+            <marker date="1479310659115" expanded="true" signature="1065:1126" ph="SELECT * FRO... user_t" />
+            <marker date="1479310659115" expanded="true" signature="1229:1272" ph="SELECT * FRO... user_t" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/function/UserFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.4/shiro-core-1.2.4.jar!/org/apache/shiro/subject/Subject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/ControllerTest/ControllerBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="49" column="60" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="60" />
+          <folding>
+            <element signature="method#Login#0;class#ControllerBaseTest#0" expanded="false" />
+            <element signature="method#SessionAttributes#0;class#ControllerBaseTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/shiro/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/test/testShiro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1800">
+          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3218#3219#0" expanded="true" />
+            <element signature="e#3243#3244#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
