@@ -18,7 +18,7 @@
     </update>
 
     <select id="showallquestions" parameterType="int" resultType="entities.Question">
-        SELECT * FROM question_t WHERE question_to =#{userid}
+        SELECT * FROM question_t WHERE question_to =#{userid} AND question_state=0
     </select>
 
 </mapper>

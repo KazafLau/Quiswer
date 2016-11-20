@@ -15,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -47,92 +49,50 @@ public class UserController {
     @Autowired
     HttpSession session;
 
-    @Autowired
-    private JMSTemplate jmsTemplate;
+    //@Autowired
+   // private JMSTemplate jmsTemplate;
     //private User user;
 
     @RequestMapping(value = "/regi")
-    public String UserRegister(HttpServletRequest req, HttpServletResponse resp){
+    public String UserRegister(@RequestParam String username,@RequestParam String password,@RequestParam String email){
         User user=new User();
-        user.setUsername(req.getParameter("username"));
-        user.setUserpassword(req.getParameter("password"));
-        user.setUsermail(req.getParameter("email"));
-        //TODO 注册的时候建立个以自己id的topic,保存在ActiveMQ服务器中,以后结交好友后,好友可直接订阅
+        user.setUsername(username);
+        user.setUserpassword(password);
+        user.setUsermail(email);
         String result=userFunction.Register(user);
         if(result.equals("index")){
-            String email=user.getUsermail();
             int id=userFunction.GetUserID(email);
             user.setUserid(id);
-            //ActiveMQTopic usertopic=new ActiveMQTopic(user.getUserid()+"topic");
         }
         return result;
     }
 
     @RequestMapping(value = "/login")
-    public String UserLogin(HttpServletRequest req, HttpServletResponse resp){
+    public ModelAndView UserLogin(@RequestParam String email,@RequestParam String password,HttpSession session){
         User user=new User();
-        user.setUsermail(req.getParameter("email"));
-        user.setUserpassword(req.getParameter("password"));
+        user.setUsermail(email);
+        user.setUserpassword(password);
         user=userFunction.Login(user);
         if(user.getUsername() != null) {
-            /**
-             * 登陆后 应该获得:
-             *
-             * 1.好友列表:好友列表可通过FriendsFunction.ShowFriends(userid)罗列出来,并存储在session中,如果有新的变化时
-             *   可以先修改session中的attribute,再修改数据库中的表
-             *
-             * 2.好友新鲜事:好友新鲜事可通过多个ActiveMQTopic的订阅来获取,为每一个好友建立一个Topic(这里可以想个办法池化的管理
-             *   所有Topic),然后一一的订阅所有好友Topic(friendID+"news"),把所有消息读出存储到session中,每次刷新页面时.........
-             *
-             * 3.新的问答请求:新的问答请求应该通过订阅自己的Queue来实现,该Queue为userID+"question",
-             *
-             * 4.新的好友请求:新的好友申请应该通过订阅自己的Queue来实现,该Queue为userID+"friends"
-             *
-             * */
-            this.ActiveMQHelper(req,resp,user);
-
-            req.getSession().setAttribute("user",user);//将user信息保存在session中 这样登陆后不需要每次都查询userid
-            req.getSession().setAttribute("username",user.getUsername());
-            req.setAttribute("userid",user.getUserid());
-
-            //List<Request> requestList=requestFunction.listRequest(user.getUserid());
-
-            Map<Request,String> requestMap=requestFunction.MapRequestwithName(user.getUserid());
-            req.getSession().setAttribute("requestmap",requestMap);
-
-            //List<Question> questionList=questionFunction.ShowAllQuestions(user.getUserid());
-
-            Map<Question,String> questionMap=questionFunction.ShowALLQuestionswithName(user.getUserid());
-            req.getSession().setAttribute("questionmap",questionMap);
-
-            List<User> friendsList=friendsFunction.ShowFriends(user.getUserid());
-            req.getSession().setAttribute("friendslist",friendsList);//1.好友列表
-
-            /*
-            if(user.getUserid()==3){
-                session.setAttribute("userquestionList",userquestionList);
-                for(Question question:userquestionList){
-                    System.out.println(" from:"+question.getQuestion_from()+" question:"+question.getQuestion_text());
-                }
-            }*/
-
-            return "home";
+            ModelAndView modelandview=new ModelAndView();
+            session.setAttribute("user",user);
+            session.setAttribute("requestmap",requestFunction.MapRequestwithName(user.getUserid()));
+            session.setAttribute("questionmap",questionFunction.ShowALLQuestionswithName(user.getUserid()));
+            session.setAttribute("friendslist",friendsFunction.ShowFriends(user.getUserid()));
+            modelandview.addObject("username",user.getUsername());
+            modelandview.addObject("userid",user.getUserid());
+           // modelandview.addObject("requestmap",requestFunction.MapRequestwithName(user.getUserid()));
+            //modelandview.addObject("questionmap",questionFunction.ShowALLQuestionswithName(user.getUserid()));
+           // modelandview.addObject("friendslist",friendsFunction.ShowFriends(user.getUserid()));
+            modelandview.setViewName("home");
+            return modelandview;
         }
         else
         {
-        return "passworderror";
+        return new ModelAndView("passworderror");
         }
     }
 
-    private void ActiveMQHelper(HttpServletRequest req,HttpServletResponse resp,User user){
-        ActiveMQQueue friendqueue=new ActiveMQQueue(user.getUserid()+"friend");//自己的好友申请Queue
-        ActiveMQQueue questionqueque=new ActiveMQQueue(user.getUserid()+"question");//自己的问题接收Queue
-
-
-
-        req.getSession().setAttribute("friendqueue",friendqueue);
-        req.getSession().setAttribute("questionqueue",questionqueque);
-    }
 
     public String UserUpdate(){
         //TODO

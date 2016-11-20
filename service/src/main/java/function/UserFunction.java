@@ -1,8 +1,10 @@
 package function;
 
 import conf.Conf;
+import dao.UserDao;
 import entities.Friends;
 import entities.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -27,18 +29,19 @@ public class UserFunction {
         this.uSer = uSer;
     }
 
+
     @Resource
-    private Conf conf;
+    private  UserDao userDao;
 
     public String Register(User user){
 
-        if(conf.getUserDao().getUserbyEmail(user.getUseremail())!=null)
-        {System.out.println(user.getUsername()+" already registered");
+        if(userDao.getUserbyEmail(user.getUseremail())!=null)
+        {System.out.println("UserFunction--Register:"+user.getUsername()+" already registered");
         return "registererror";}
         else {
-            conf.getUserDao().insertUser(user);
-            conf.getSession().commit();
-            System.out.println(user.getUsername()+" register successfully");
+            userDao.insertUser(user);
+           // conf.getSession().commit();
+            System.out.println("UserFunction--Register:"+user.getUsername()+" register successfully");
             return "index";
         }
     }
@@ -48,52 +51,63 @@ public class UserFunction {
     }
 
     public User Login(User user){
-        User tempuser=conf.getUserDao().getUserbyEmail(user.getUsermail());
+        User tempuser=userDao.getUserbyEmail(user.getUsermail());
         if(tempuser==null){
-            System.out.println("email has not registered");}
+            System.out.println("UserFunction--Login:email has not registered");}
         else
         {
             if (user.getUserpassword().equals(tempuser.getUserpassword()))
             {
-                System.out.println("login successfully");
+                System.out.println("UserFunction--Login:login successfully");
                 uSer=tempuser;
             }
             else
-            {   System.out.println("the database password:"+tempuser.getUserpassword());
-                System.out.println("the user password:"+user.getUserpassword());
-                System.out.println("password is wrong");}
+            {   System.out.println("UserFunction--Login:the database password:"+tempuser.getUserpassword());
+                System.out.println("UserFunction--Login:the user password:"+user.getUserpassword());
+                System.out.println("UserFunction--Login:password is wrong");}
         }
 
         return tempuser;
     }
 
     public List<User> ShowAllUsers(){
-       List<User> userList= conf.getUserDao().showallusers();
+       List<User> userList= userDao.showallusers();
         return  userList;
     }
 
     public int GetUserID(String useremail){
-        User tempuser=conf.getUserDao().getUserbyEmail(useremail);
+        User tempuser=userDao.getUserbyEmail(useremail);
         if(tempuser==null){
-            System.out.println("email has not registered");
+            System.out.println("UserFunction--GetUserID:email has not registered");
             return 0;}
         else
         {
-            System.out.println("Get userid successfully");
+            System.out.println("UserFunction--GetUserID:Get userid successfully");
             return tempuser.getUserid();
         }
     }
 
     public User GetActiveUser(int userid){
-        User tempuser=conf.getUserDao().getActiveUser(userid);
+        User tempuser=userDao.getActiveUser(userid);
         if(tempuser==null){
-            System.out.println("userid has not registered");
+            System.out.println("UserFunction--GetActiveUser:userid has not registered");
             return null;}
         else
         {
-            System.out.println("Get user successfully");
+            System.out.println("UserFunction--GetActiveUser:Get user successfully");
             return tempuser;
         }
+    }
+
+    public User GetUserDAO(int userid){
+        return userDao.getUser(userid);
+    }
+
+    public List<User> ShowUsersWithName(String username){
+        if(userDao.showUserswithName(username)==null){
+            System.out.println("UserFunction--ShowUsersWithName:there's no user with this name");
+        }
+        return userDao.showUserswithName(username);
     }
 
 }

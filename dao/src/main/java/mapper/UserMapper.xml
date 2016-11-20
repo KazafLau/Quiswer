@@ -20,6 +20,9 @@
         SELECT * from user_t
     </select>
 
+    <select id="showUserswithName" parameterType="String" resultType="entities.User">
+        SELECT * from user_t WHERE username LIKE #{username} AND user_active=1
+    </select>
     <select id="getActiveUser" parameterType="int" resultType="entities.User">
         SELECT * FROM user_t WHERE userid=#{userid} and user_active=1
     </select>

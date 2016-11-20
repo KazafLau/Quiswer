@@ -9,8 +9,7 @@ import org.springframework.context.annotation.Import;
  * Created by Kazaf on 16/10/7.
  */
 @Configuration
-@ComponentScan(basePackages = "function,conf")
-@Import(JMSConfig.class)
+@Import(ShiroConfig.class)
 public class AppConfig {
 
 

@@ -11,7 +11,7 @@
     <title>Question</title>
 </head>
 <body>
-I just want to ask you:<br>
+You just want to ask <%=request.getParameter("friendname")%>:<br>
 <form action="/Nomainate" method="post">
     <input type="text" name="question">
     <select name="privacy">
@@ -19,10 +19,9 @@ I just want to ask you:<br>
         <option value="private">Private</option>
     </select>
     <input type="hidden" name="friendID" value="<%=request.getParameter("friendID")%>">
-    <input type="submit" value="确认"></form>
+    <input type="submit" value="Ask"></form>
 <br>
 
-Hello:<%request.setAttribute("friendID",request.getParameter("friendID"));%>
 
 </body>
 </html>

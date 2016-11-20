@@ -18,7 +18,7 @@ public class TestQuestionFunction {
     UserFunction userFunction=new UserFunction();
 
 
-    @Test
+    //@Test
     public void testAddQuestion(){
         Question question=new Question("hello it's me !",27,30,1);
         System.out.println();
@@ -27,7 +27,7 @@ public class TestQuestionFunction {
         System.out.println(questionFunction.AddQuestion(question));
     }
 
-    @Test
+    //@Test
     public void testAnswerQuestion(){
         System.out.println();
         System.out.println();
@@ -36,7 +36,7 @@ public class TestQuestionFunction {
 
     }
 
-    @Test
+   // @Test
     public void testShowALlQuestions(){
         System.out.println();
         System.out.println();
@@ -46,7 +46,7 @@ public class TestQuestionFunction {
         }
     }
 
-    @Test
+    //@Test
     public void testShowALlQuestionswithName(){
         System.out.println();
         System.out.println();

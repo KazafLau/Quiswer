@@ -17,7 +17,7 @@ import java.io.Reader;
 /**
  * Created by kazaf on 16-10-1.
  */
-@Repository
+//@Repository
 public class Conf {
 
 

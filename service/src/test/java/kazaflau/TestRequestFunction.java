@@ -13,7 +13,7 @@ public class TestRequestFunction {
 
     RequestFunction requestFunction=new RequestFunction();
 
-    @Test
+    //@Test
     public void testaddRequest(){
         int userid1=3;
         int userid2=36;
@@ -24,7 +24,7 @@ public class TestRequestFunction {
         System.out.println(requestFunction.addRequest(userid1,userid2,message));
     }
 
-    @Test
+    //@Test
     public void testresponseRequest(){
         Request request=requestFunction.findRequest(20);
         request.setRequest_state(1);
@@ -35,7 +35,7 @@ public class TestRequestFunction {
 
     }
 
-    @Test
+    //@Test
     public void testlistRequest(){
         System.out.println();
         System.out.println();
@@ -45,7 +45,7 @@ public class TestRequestFunction {
         }
     }
 
-    @Test
+   // @Test
     public void testlMapRequestwithName(){
         System.out.println();
         System.out.println();
@@ -56,7 +56,7 @@ public class TestRequestFunction {
         }
     }
 
-    @Test
+    //@Test
     public void testfindRequest(){
         Request request=requestFunction.findRequest(11);
         System.out.println();

@@ -48,18 +48,24 @@ ${userid}<br>
         <th>RequestFriend</th>
         <th>RequestText</th>
         <th>RequestTime</th>
-        <th>Yes</th>
-        <th>No</th>
+        <th>Choidce</th>
+        <th>Decide</th>
     </tr>
     <%
         for(Request request1:requestmap.keySet()){
             %>
-    <tr>
+    <tr><form method="post" action="friendrequest">
         <th><%=requestmap.get(request1)%></th>
         <th><%=request1.getRequest_message()%></th>
         <th><%=request1.getRequest_time()%></th>
-        <th><button name="yes" value="yes"/> </th>
-        <th><button name="No" value="No"/> </th>
+        <th><select name="answer">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+        </select> </th>
+        <th><input type="submit" value="OK"></th>
+        <input type="hidden" name="request_id" value="<%=request1.getRequest_id()%>">
+        <input type="hidden" name="request_from" value="<%=requestmap.get(request1)%>">
+    </form>
     </tr>
     <%}%>
 </table>
@@ -95,5 +101,10 @@ ${userid}<br>
 </table>
 <%}%>
 
+
+<form method="post" action="searchfriend">
+    <input type="text" name="friendname">
+    <input type="submit" value="Search this FriendName">
+</form>
 </body>
 </html>

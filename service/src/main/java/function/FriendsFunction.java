@@ -1,6 +1,8 @@
 package function;
 
 import conf.Conf;
+import dao.FriendsDao;
+import dao.UserDao;
 import entities.Friends;
 import entities.User;
 import org.springframework.stereotype.Component;
@@ -15,16 +17,21 @@ import java.util.List;
 @Component
 public class FriendsFunction {
 
+    //@Resource
+    //private Conf conf;
+
     @Resource
-    private Conf conf;
+    private FriendsDao friendsDao;
+    @Resource
+    private UserDao userDao;
 
     public String MakeFriends(int userid1,int userid2){
         Friends friends=compareID(userid1,userid2);
-        if(conf.getFriendsDao().getfriends(friends)!=null)
+        if(friendsDao.getfriends(friends)!=null)
             return userid1+" and "+userid2+" already made friends";
         else {
-            conf.getFriendsDao().makefriends(friends);
-            conf.getSession().commit();
+            friendsDao.makefriends(friends);
+            //conf.getSession().commit();
             return userid1+" and "+userid2+" make friends successfully";
         }
 
@@ -33,7 +40,7 @@ public class FriendsFunction {
     public List<Friends> ShowFriendsShip(int userid){
         //返回的是List<Friedns>类型,即好友关系的列表
         //返回了两个List 一个是在friends_t表中的所有记录List,另一个是在user_t中的好友记录
-        return conf.getFriendsDao().showfriends(userid);
+        return friendsDao.showfriends(userid);
     }
 
     public List<User> ShowFriends(int userid){
@@ -41,9 +48,9 @@ public class FriendsFunction {
         for( Friends friend:ShowFriendsShip(userid))
         {
             if(friend.getFriend1()==userid){
-                userList.add(conf.getUserDao().getUser(friend.getFriend2()));
+                userList.add(userDao.getUser(friend.getFriend2()));
             }else {
-                userList.add(conf.getUserDao().getUser(friend.getFriend1()));
+                userList.add(userDao.getUser(friend.getFriend1()));
             }
         }
         return userList;
@@ -51,7 +58,7 @@ public class FriendsFunction {
 
     public int ShowFriendShip(int userid1,int userid2){
         Friends friends=compareID(userid1,userid2);
-        if(conf.getFriendsDao().showfriendship(friends)==null){
+        if(friendsDao.showfriendship(friends)==null){
             System.out.println(userid1+" and "+userid2+" are not friends!");
             return 0;
         }else{

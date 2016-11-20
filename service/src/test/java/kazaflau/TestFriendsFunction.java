@@ -18,7 +18,7 @@ public class TestFriendsFunction {
 
 
 
-    @Test
+    //@Test
     public void testShowFriendShip(){
         System.out.println("========testShowFriendShip========");
         for(Friends friends:friendsFunction.ShowFriendsShip(1)){
@@ -26,7 +26,7 @@ public class TestFriendsFunction {
         }
     }
 
-    @Test
+    //@Test
     public void testShowFriends(){
         System.out.println("========testShowFriends========");
         for(User user:friendsFunction.ShowFriends(28)){

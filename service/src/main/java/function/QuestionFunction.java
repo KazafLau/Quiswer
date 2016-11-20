@@ -1,6 +1,8 @@
 package function;
 
 import conf.Conf;
+import dao.QuestionDao;
+import dao.UserDao;
 import entities.Question;
 import org.apache.activemq.command.ActiveMQQueue;
 import org.apache.activemq.command.ActiveMQTopic;
@@ -23,17 +25,24 @@ import java.util.Map;
 public class QuestionFunction {
 
 
+    //@Resource
+    //private Conf conf;
+
     @Resource
-    private Conf conf;
+    private QuestionDao questionDao;
+    @Resource
+    private UserDao userDao;
+
+
 
     public String AddQuestion(Question question){
-        conf.getQuestionDao().addquestion(question);
-        conf.getSession().commit();
+        questionDao.addquestion(question);
+        //conf.getSession().commit();
         return "ok";
     }
 
     public String AnswerQuestion(int questionid,String answer){
-        Question question=conf.getQuestionDao().findquestion(questionid);
+        Question question=questionDao.findquestion(questionid);
         if(question==null){
             return  "the question_id is wrong ";
         }else{
@@ -41,8 +50,8 @@ public class QuestionFunction {
             int friendid=question.getQuestion_from();
             question.setQuestion_answer(answer);
             //question.setAnswer_time(new Timestamp(System.currentTimeMillis()));
-            conf.getQuestionDao().answerquestion(question);
-            conf.getSession().commit();
+            questionDao.answerquestion(question);
+           //conf.getSession().commit();
 
         return "the question is answered successfully!";
         }
@@ -50,14 +59,14 @@ public class QuestionFunction {
 
     public List<Question> ShowAllQuestions(int userid){
 
-        return (ArrayList)conf.getQuestionDao().showallquestions(userid);
+        return (ArrayList)questionDao.showallquestions(userid);
     }
 
 
     public Map<Question,String> ShowALLQuestionswithName(int userid){
         Map<Question,String> questionMap=new HashMap<Question, String>();
         for(Question question:ShowAllQuestions(userid)){
-            questionMap.put(question,conf.getUserDao().getUserfromID(question.getQuestion_from()).getUsername());//这里获取的都是活跃客户的问题，如果遇到已经注销客户的问题则查询不到userid
+            questionMap.put(question,userDao.getUserfromID(question.getQuestion_from()).getUsername());//这里获取的都是活跃客户的问题，如果遇到已经注销客户的问题则查询不到userid
         }
         return questionMap;
     }

@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * Created by Kazaf on 16/10/13.
  */
-@Configuration
+//@Configuration
 @ComponentScan("jms")
 public class JMSConfig {
 

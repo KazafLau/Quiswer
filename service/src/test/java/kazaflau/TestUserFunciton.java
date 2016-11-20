@@ -7,8 +7,12 @@ import function.FriendsFunction;
 import function.QuestionFunction;
 import function.RequestFunction;
 import function.UserFunction;
+import org.junit.BeforeClass;
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,17 +23,27 @@ import static java.lang.System.*;
  */
 public class TestUserFunciton {
 
-    UserFunction userFunction=new UserFunction();
 
-    @Test
+
+    private static UserFunction userFunction;
+
+
+    //@BeforeClass
+    public static void init(){
+        ApplicationContext cx= new AnnotationConfigApplicationContext("configuration.DataConfig");
+        userFunction=(UserFunction)cx.getBean(UserFunction.class);
+    }
+
+
+    //@Test
     public void testRegister(){
-        User user=new User("Kucka","19881129","kukall@163.com");
+        User user=new User("Ozil","19881129","Ozil@163.com");
         System.out.println("========testRegister========");
         System.out.println(userFunction.Register(user));
         //注册的时候 应该注意防止邮箱重复
     }
 
-    @Test
+    //@Test
     public void testLogin(){
         User user=new User("Kucka","19881129","kukall@163.com");
         System.out.println("========testLogin========");
@@ -37,7 +51,7 @@ public class TestUserFunciton {
         //当存在 多个重复邮箱时 需要解决一下
     }
 
-    @Test
+    //@Test
     public void testShowAllUsers(){
         System.out.println("========testShowAllUsers========");
         List<User> userList=userFunction.ShowAllUsers();
@@ -46,12 +60,19 @@ public class TestUserFunciton {
         }
     }
 
-    @Test
+    //@Test
     public void testGetUserID(){
         String useremail="liu.kazaf@icloud.com";
         System.out.println("========testGetUserID========");
         System.out.println(userFunction.GetUserID(useremail));
 
     }
+
+   // @Test
+    public void testDAOGetUser(){
+        System.out.println(userFunction.GetUserDAO(3).getUsername());
+
+    }
+
 
 }
